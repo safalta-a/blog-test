@@ -13,7 +13,12 @@ class TaskController extends Controller
     public function taskList()
     {
         $tasks = Task::paginate(5); // Paginate tasks, 5 per page
-        return response()->json($tasks);
+        return response()->json([
+            'response' => [
+                'code' => 200,
+                'data' => $tasks,
+            ]
+        ]);
     }
 
 
