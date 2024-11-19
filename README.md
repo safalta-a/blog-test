@@ -9,7 +9,7 @@ composer version 2.8.3
 composer install / composer update
 ```
 ### Run Migrations for tables
- ```shs
+ ```sh
  php artisan migrate
  ```
 ### Compile and run
